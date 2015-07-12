@@ -22,7 +22,11 @@ exports.load = function(req, res, next, quizId) {
 
 // GET /quizes
 exports.index = function(req, res) {
-  models.Quiz.findAll().then(function(quizes) {
+    console.log("looooooog" +req.query.search);
+    var filtro  = (req.query.search || '').replace(" ", "%");
+    models.Quiz.findAll({where:["pregunta like ?", '%'+filtro+'%'],order:'pregunta ASC'}).then(function(quizes){
+  
+//models.Quiz.2findAll().then(function(quizes) {
     res.render('quizes/index.ejs', { quizes: quizes  });
     }
   ).catch(function(error) { next(error);});
