@@ -3,7 +3,7 @@ var router = express.Router();
 var quizController = require('../controllers/quiz_controller');
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'QUIZ' });
+  res.render('index', { title: 'QUIZ', errors: [] });
 });
 
 // router.get('/quizes/question', quizController.question);
