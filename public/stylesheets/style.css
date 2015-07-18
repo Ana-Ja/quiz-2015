@@ -11,7 +11,7 @@ header, nav, section { background: #eee; text-align: center;}
 footer               { background: #eee; text-align: center;}
 nav span             { margin: 0px 10px 0px 0px;}
 
- div #img {float:left;width: 30%}
- #imagen {height: 150px; margin:3px}
- #autor {float:left;width: 70%}
-#ErrorMsgs           { color: #f61; font-size: smaler}
+ div #img {float:left;width: 30%;}
+ #imagen {height: 150px; margin:3px;}
+ #autor {float:left;width: 70%;}
+#ErrorMsgs           { color: #f61; font-size: smaler;}
