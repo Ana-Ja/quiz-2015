@@ -93,6 +93,13 @@ exports.create = function(req, res) {
    );
  };
 
+ exports.destroy = function(req, res){
+ 	req.quiz.destroy().then(function(){
+ 		res.redirect('/quizes');
+ 	}).catch(function(err) {next(error)});
+ };
+
+
 // GET /quizes/answer
 exports.answer= function(req, res ){
   // if (req.query.respuesta ==='Roma'){
