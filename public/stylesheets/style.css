@@ -15,3 +15,4 @@ nav span             { margin: 0px 10px 0px 0px;}
  #imagen {height: 150px; margin:3px;}
  #autor {float:left;width: 70%;}
 #ErrorMsgs           { color: #f61; font-size: smaler;}
+.right 				 {float: right;} 
